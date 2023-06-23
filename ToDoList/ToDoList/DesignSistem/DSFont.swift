@@ -15,17 +15,17 @@ extension DSFont{
         
         switch self{
         case .largeTitle:
-            font = UIFont(name: "SFProDisplay-Regular", size: 38)?.withWeight(UIFont.Weight(700))
+            font =  UIFont.systemFont(ofSize: 38).withWeight(UIFont.Weight(700))
         case .title:
-            font = UIFont(name: "SFProDisplay-Regular", size: 20)?.withWeight(UIFont.Weight(600))
+            font = UIFont.systemFont(ofSize: 20).withWeight(UIFont.Weight(600))
         case .headline:
-            font = UIFont(name: "SFProText-Regular",size: 17)?.withWeight(UIFont.Weight(600))
+            font = UIFont.systemFont(ofSize: 17).withWeight(UIFont.Weight(600))
         case .body:
-            font = UIFont(name: "SFProText-Regular",size: 17)?.withWeight(UIFont.Weight(400))
+            font = UIFont.systemFont(ofSize: 17).withWeight(UIFont.Weight(400))
         case .subhead:
-            font = UIFont(name: "SFProText-Regular",size: 15)?.withWeight(UIFont.Weight(400))
+            font = UIFont.systemFont(ofSize: 15).withWeight(UIFont.Weight(400))
         case .footnote:
-            font = UIFont(name: "SFProText-Regular",size: 13)?.withWeight(UIFont.Weight(600))
+            font = UIFont.systemFont(ofSize: 13).withWeight(UIFont.Weight(600))
         }
         return font ?? UIFont()
     }
